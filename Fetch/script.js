@@ -49,3 +49,5 @@ const showUserDetails = (user) => {
 };
 
 getUsers();
+
+console.log($);
