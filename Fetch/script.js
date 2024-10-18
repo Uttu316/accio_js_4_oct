@@ -5,11 +5,14 @@ const getUsers = async () => {
   const data = await res.json();
 
   const users = data.data.data;
+  const box = document.getElementById("users_box");
 
-  users.forEach((user) => {
-    showUserDetails(user);
+  const usersUI = users.map((user) => {
+    const userCard = showUserDetails(user);
+    return userCard;
   });
-  console.log(users);
+
+  box.append(...usersUI);
 };
 
 const create_card = (cardData) => {
@@ -32,8 +35,6 @@ const create_card = (cardData) => {
 };
 
 const showUserDetails = (user) => {
-  const box = document.getElementById("users_box");
-
   const { name, email } = user;
   const { title, first, last } = name;
 
@@ -44,7 +45,7 @@ const showUserDetails = (user) => {
     email: email,
   };
   const card = create_card(cardData);
-  box.append(card);
+  return card;
 };
 
 getUsers();
