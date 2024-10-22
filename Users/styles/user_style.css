@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+}
+
+.header{
+    color: white;
+    margin: 40px 20px;
+
+}
+
+#username{
+    color: salmon;
+}
+
+.user-info{
+    border: 1px solid lightgrey;
+    width: 60%;
+    max-width: 750px;
+    min-width: 320px;
+    margin :60px auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 4px 4px 20px whitesmoke, -4px -4px 20px pink;
+}
+
+#user_img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#user_img img{
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-60px;
+    box-shadow:  -4px -4px 20px pink;
+    background-color: lightgray;
+}
+
+
+.user-details{
+    color: white;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+#user_gender{
+    text-transform: capitalize;
+}

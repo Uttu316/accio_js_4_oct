@@ -45,7 +45,7 @@ const onImgClick = (event) => {
 
   const modal = $("#modal");
   const modalImg = modal.find("img")[0];
-  console.log({ modalImg, src });
+
   modalImg.src = src;
   modalImg.alt = alt;
 
@@ -53,9 +53,10 @@ const onImgClick = (event) => {
   event.stopPropagation();
 };
 
-const onCardClick = (event) => {
+const onCardClick = (event, user) => {
   const { target } = event;
-  console.log(target);
+  localStorage.setItem("user", JSON.stringify(user));
+  location.pathname = location.pathname.replace("index", "user");
 };
 
 const showUserDetails = (user) => {
@@ -80,7 +81,9 @@ const showUserDetails = (user) => {
 
   img.on("click", onImgClick);
 
-  card.on("click", onCardClick);
+  card.on("click", (event) => {
+    onCardClick(event, user);
+  });
 
   return card;
 };
