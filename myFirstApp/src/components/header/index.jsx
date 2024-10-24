@@ -1,11 +1,15 @@
 
 
+import Logo from "../logo"
 import "./header.css"
 
-const Header = ()=>{
+const Header = (props)=>{
+    const {title} = props
+
     return (
         <header className="header">
-            Hello - Header 
+           <Logo title={title}  />
+        
         </header>
     )
 }

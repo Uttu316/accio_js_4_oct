@@ -1,0 +1,45 @@
+.counter_body {
+  background-color: blanchedalmond;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter_container {
+  background-color: whitesmoke;
+  box-shadow: 4px 4px 4px #ccc;
+  border-radius: 20px;
+  padding: 16px;
+  margin: 0px auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter_value {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+.counter_actions {
+  display: flex;
+  gap: 16px;
+}
+.counter_btn {
+    cursor: pointer;
+  box-shadow: 4px 4px 4px #ccc;
+  color: white;
+  padding: 10px 16px;
+  background-color: salmon;
+  border-radius: 12px;
+  font-size: 16px;
+  border: none;
+    translate: all ease;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.counter_btn:active{
+    box-shadow: none;
+    transform: scale(0.8);
+}
+
