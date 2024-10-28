@@ -6,21 +6,16 @@ import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 import FormWrapper from "./components/form/formWraper"
 import ClassCard from "./components/class";
-import LifeCycle from "./components/class/lifeCycle";
+import LifeCycleWrapper from "./components/class/lifecycleWrapper";
+import HooksWrapper from "./components/hooks/hooksWrapper";
+import Ref from "./components/ref";
 
 function App() {
-  const [showForm,setShowForm] = useState(true)
-
-  const toggle = ()=>{
-    setShowForm(!showForm)
-  }
- return (
-  <div id="app">
-    {/* <ClassCard /> */}
-   {!!showForm&& <LifeCycle/>}
-   <button onClick={toggle}>Toggle</button>
-  </div>
- )
+  return (
+    <div id="app">
+        <Ref/>
+    </div>
+  )
 }
 
 export default App;
