@@ -1,12 +1,106 @@
-
-
-.form_body{
-    background-color: blanchedalmond;
-    height: 100vh;
+.form_body {
+  background-color: blanchedalmond;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.form_container{
+.form_container {
+    width: 40%;
+  background-color: white;
+  box-shadow: 4px 4px 4px #ccc;
+  padding: 20px;
+  border-radius: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form_heading {
+  text-align: center;
+  margin-bottom: 14px;
+  color: #12b76a;
+  text-shadow: 4px 4px 20px #12b76a;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column-reverse;
+    gap:6px;
+    margin-bottom: 12px;
+}
+.inputBox label{
+    font-size: 14px;
+    translate: all ease;
+}
+.inputBox input:focus + label{
+    font-weight: bold;
+    font-size: 16px;
 
 }
-.form_heading{
+.inputBox input{
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+   
+}
+.inputBox input:focus{
+    outline: 1px solid salmon;
+}
 
+.radioBox{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    margin-bottom: 12px;
+}
+.radioBox .label{
+    font-size: 16px;
+}
+
+.genderBox{
+    display: flex;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.genderBox label{
+margin-right: 8px;
+color: gray;
+}
+.genderBox input{
+    margin-right: 12px;
+}
+
+.allowBox{
+    display: flex;
+    gap:10px;
+    margin-bottom: 10px;
+}
+.allowBox label{
+    font-size: 12px;
+    color: gray;
+}
+
+.submitBtn{
+    padding: 8px 12px;
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 4px 4px 4px #ccc;
+    background-color: salmon;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.submitBtn:active{
+    box-shadow: 4px 4px 12px #ccc;
+    transform: scale(0.95);
+}
+
+.error{
+    font-size: 12px;
+    color: #ef574c;
+    font-weight: bold;
 }
