@@ -1,21 +1,8 @@
-import { useState } from "react";
 import "./App.css";
-import Counter from "./components/counter";
-import Feed from "./components/feed";
-import Header from "./components/header";
-import Sidebar from "./components/sidebar";
-import FormWrapper from "./components/form/formWraper"
-import ClassCard from "./components/class";
-import LifeCycleWrapper from "./components/class/lifecycleWrapper";
-import HooksWrapper from "./components/hooks/hooksWrapper";
-import Ref from "./components/ref";
+import AppRouter from "./router";
 
 function App() {
-  return (
-    <div id="app">
-        <Ref/>
-    </div>
-  )
+  return <AppRouter/>;
 }
 
 export default App;
