@@ -6,9 +6,11 @@ import NotFoundPage from "../pages/notfound";
 import UserPage from "../pages/user";
 import ProductsPage from "../pages/products";
 import ProductPage from "../pages/product";
+import AppProvider from "../contexts/appcontext";
 
 const AppRouter = (props) => {
   return (
+   <AppProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -20,6 +22,7 @@ const AppRouter = (props) => {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
+    </AppProvider>
   );
 };
 

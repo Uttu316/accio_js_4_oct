@@ -13,6 +13,7 @@ const ProfilePage = ()=>{
         <div id="profile">
             <h1>Profile</h1>
             <Link to="/about">About</Link>
+            
             <button onClick={onGoBack}>
                 Go back
             </button>
